@@ -1,0 +1,58 @@
+{
+    "name": "santran/trader",
+    "type": "library",
+    "description": "Laravel 5.x package for trader extension interface.",
+    "keywords": [
+        "laravel",
+        "trader"
+    ],
+    "homepage": "https://github.com/mrsantran/trader",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tran Doan San",
+            "email": "santran686@gmail.com",
+            "homepage": "https://github.com/mrsantran",
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "ext-trader": "*",
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.5",
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "Santran\\Trader\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Santran\\Trader\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "lint": "phpcs -p --standard=psr2 src",
+        "phpunit": "phpunit",
+        "phpunit-integration": "phpunit --testsuite Integration",
+        "phpunit-unit": "phpunit --testsuite Unit",
+        "phpunit-coverage": "phpunit --coverage-clover=coverage.clover",
+        "test": [
+            "@phpunit"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Santran\\Trader\\TraderServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
