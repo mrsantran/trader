@@ -12,15 +12,15 @@
         {
             "name": "Tran Doan San",
             "email": "santran686@gmail.com",
-            "homepage": "https://github.com/mrsantran",
+            "homepage": "https://github.com/mrsantran"
         }
     ],
     "require": {
         "php": ">=5.3",
-        "ext-trader": "*",
+        "ext-trader": "*"
     },
     "require-dev": {
-        "phpunit/phpunit": "~6.5",
+        "phpunit/phpunit": "~6.5"
     },
     "autoload": {
         "files": [
